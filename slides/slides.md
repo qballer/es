@@ -47,7 +47,7 @@ By Doron Tsur
 <v-click>
 <div>
 <div>Elastic Search is a real time analytics and search engine.</div> 
-<div>Initial it bacme famouse for it's distributed full text search capabilites. </div>
+<div>Initialy it bacme famouse for it's distributed full text search capabilites. </div>
 </div>
 </v-click>
 <img src="/elasticsearch.png" class="center"/>
@@ -151,7 +151,7 @@ TODO: Add Image of an elastic Cluster detailed
 
 ---
 
-# How does elastic reads and writes?
+# How do reads and writes work in elastic search?
 
 <br>
 <br>
@@ -390,7 +390,7 @@ POST /products/_update/100?if_primary_term=X&if_seq_no=X
  - Term: Range, ID, Exist, Prefix, Wildcard, 
  - Full Text: match, match_phrase, multi_match
  - Relevance score (_score)
-    - TF/IF (aproximity score, field length norm) Data Scientest may be summoned  
+    - TF/IDF (aproximity score, field length norm) Data Scientest may be summoned  
     - https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables
  - Explain API 
  - compound queries 

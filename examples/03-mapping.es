@@ -151,3 +151,34 @@ POST /_analyze
   "text": "2 guys walk into   a bar, but the third... DUCKS! :-)",
   "analyzer": "keyword"
 }
+
+
+PUT my-index-000001
+{
+  "mappings": {
+    "properties": {
+      "status_code": { 
+        "type":       "keyword"
+      },
+      "session_id": { 
+        "type":       "keyword",
+        "doc_values": false
+      }
+    }
+  }
+}
+
+PUT my-index-000001
+{
+  "mappings": {
+    "properties": {
+      "number_one": {
+        "type": "integer"
+      },
+      "number_two": {
+        "type": "integer",
+        "coerce": false
+      }
+    }
+  }
+}

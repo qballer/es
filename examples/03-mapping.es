@@ -33,6 +33,9 @@ PUT /reviews_new
   }
 }
 
+GET /reviews_new/_mapping
+
+
 PUT /multi_field_test
 {
   "mappings": {

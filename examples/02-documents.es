@@ -1,9 +1,11 @@
-POST /products/_doc
+POST /shani/_doc/1
 {
   "name": "Coffee Maker",
   "price": 64,
   "in_stock": 10
 }
+
+GET /products/_doc/1
 
 PUT /products/_doc/100  
 {

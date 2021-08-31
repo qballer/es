@@ -7,7 +7,7 @@ services:
     environment:
      - cluster.name=docker-cluster
      - node.name=elasticsearch1
-     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+     - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
      - xpack.monitoring.collection.enabled=true
      - xpack.monitoring.exporters.remote.type=http
      - xpack.monitoring.exporters.remote.host=monitor
@@ -22,7 +22,7 @@ services:
     environment:
      - cluster.name=docker-cluster
      - node.name=elasticsearch2
-     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+     - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
      - xpack.monitoring.collection.enabled=true
      - xpack.monitoring.exporters.remote.type=http
      - xpack.monitoring.exporters.remote.host=monitor
@@ -37,7 +37,7 @@ services:
     environment:
      - cluster.name=docker-cluster
      - node.name=elasticsearch3
-     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+     - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
      - xpack.monitoring.collection.enabled=true
      - xpack.monitoring.exporters.remote.type=http
      - xpack.monitoring.exporters.remote.host=monitor
@@ -52,7 +52,7 @@ services:
     environment:
      - cluster.name=docker-monitor-cluster
      - node.name=monitor
-     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+     - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
      - xpack.monitoring.collection.enabled=false
      - discovery.seed_hosts=monitor
      - cluster.initial_master_nodes=monitor
